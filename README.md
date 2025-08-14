@@ -65,6 +65,22 @@ Note: Some issuers (esp. banks/NBFCs) report Revenue rather than Sales and provi
     ---> Alpha Vantage (TIME_SERIES_DAILY) API
 
             https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=<BSE_TICKER>.BSE&outputsize=full&apikey=<KEY>
+    
+    Project Structure
+        data
+            backup data original raw dump
+            backup cleaned data, data types
+        images
+            images from EDA
+        notebooks
+            Data_Cleaners 
+                Data_Quality_Check_Summary.ipynb
+                     Uses MS_Capstone_Final_Clean excel and performs some quality checks. 
+                     O/P: MS_Capstone_Final_Quality_Check_Summary
+                EDA_Draft_code.ipynb
+                    initia EDA performed on MS_Capstone_Final_Quality_Check_Summary.
+        reports
+            QM 640 Interim Report-Abhi Vedwa Draft V1 (WIP)
 
 
 
