@@ -1,0 +1,21 @@
+feature_a,feature_b,spearman_r
+Closing Price (T+2),3-Day Avg Price Post Result,0.9999338173652694
+Closing Price (T+3),3-Day Avg Price Post Result,0.9998914930163315
+Closing Price (T+1),3-Day Avg Price Post Result,0.9998745030277726
+Closing Price (T+2),Closing Price (T+3),0.9998455537695654
+Closing Price (T+1),Closing Price (T+2),0.9997443066893056
+Closing Price (T+1),Closing Price (T+3),0.9996349562387298
+Closing Price (T),Closing Price (T+1),0.999147171821224
+Closing Price (T),3-Day Avg Price Post Result,0.9989659753925018
+Closing Price (T),Closing Price (T+2),0.9988195722574252
+Closing Price (T),Closing Price (T+3),0.9987125715091415
+Net Profit,Profit before tax,0.9973750532023254
+Sales,Expenses,0.997100320567136
+Revenue,Interest,0.9693235674346357
+Net Profit,Revenue,0.9472114613961707
+Profit before tax,Revenue,0.9471069549970778
+Revenue,Expenses,0.9375833595588126
+Financing Profit,Financing Margin %,0.8907409316806464
+Profit before tax,Sales,0.8818926262391781
+Sales,Depreciation,0.8757197657514165
+Net Profit,Sales,0.8729414367805867
