@@ -1,0 +1,16 @@
+Sector,Model,TN,FP,FN,TP
+Pharma,LogisticRegression,16,5,9,6
+Pharma,RandomForest,13,8,9,6
+Pharma,XGBoost,12,9,9,6
+IT,Technology_LogisticRegression,13,7,5,11
+IT,Technology_RandomForest,13,7,7,9
+IT,Technology_XGBoost,12,8,5,11
+Auto,LogisticRegression,7,11,9,8
+Auto,RandomForest,8,10,10,7
+Auto,XGBoost,8,10,8,9
+BFSI,LogisticRegression,24,0,12,0
+BFSI,RandomForest,20,4,9,3
+BFSI,XGBoost,21,3,10,2
+FMCG,LogisticRegression,14,9,6,7
+FMCG,RandomForest,16,7,9,4
+FMCG,XGBoost,13,10,7,6
