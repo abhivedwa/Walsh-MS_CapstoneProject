@@ -66,24 +66,5 @@ Note: Some issuers (esp. banks/NBFCs) report Revenue rather than Sales and provi
 
             https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=<BSE_TICKER>.BSE&outputsize=full&apikey=<KEY>
     
-   Walsh-MS_CapstoneProject/
-├── data/
-│   ├── raw/
-│   ├── raw_processed/
-├── images/
-│   ├── cells from EDA/
-├── reports/
-│   └── QM_640_Interim_Report_Abhi_Vedwa_Draft_V1.pdf
-├── src/
-│   └── notebooks/
-|       └── Data_Cleaners/ 
-|            └──Data_Quality_Check_Summary.ipynb
-|                     Uses MS_Capstone_Final_Clean excel and performs some quality checks. 
-|                     O/P: MS_Capstone_Final_Quality_Check_Summary
-|            └──EDA_Draft_code.ipynb
-|                    initia EDA performed on MS_Capstone_Final_Quality_Check_Summary.
-|       └── Data_Extractors/   
-└── README.md
-
-
+   
 
