@@ -1,0 +1,51 @@
+Sector,Model,Feature_Rank,Feature_Name,SHAP_Importance
+Pharma,LogisticRegression,1,Tax %,1.682169492398148
+Pharma,LogisticRegression,2,Depreciation,0.41293275524514467
+Pharma,LogisticRegression,3,Net Profit,0.26868580900807837
+Pharma,LogisticRegression,4,OPM %,0.2620773322959693
+Pharma,LogisticRegression,5,EPS in Rs,0.21692696677427978
+Pharma,XGBoost,1,Other Income,0.7813563346862793
+Pharma,XGBoost,2,Depreciation,0.5323337912559509
+Pharma,XGBoost,3,Interest,0.48479801416397095
+Pharma,XGBoost,4,Tax %,0.4264777898788452
+Pharma,XGBoost,5,Sales,0.37785857915878296
+IT_Technology,LogisticRegression,1,Net Profit,9.221059330873823
+IT_Technology,LogisticRegression,2,Profit before tax,8.19198643358411
+IT_Technology,LogisticRegression,3,Expenses,1.5567919721777224
+IT_Technology,LogisticRegression,4,Depreciation,1.1984952048324335
+IT_Technology,LogisticRegression,5,Sales,1.176052128796666
+IT_Technology,XGBoost,1,Profit before tax,0.4434332251548767
+IT_Technology,XGBoost,2,Other Income,0.405050665140152
+IT_Technology,XGBoost,3,Tax %,0.38935327529907227
+IT_Technology,XGBoost,4,EPS in Rs,0.32986339926719666
+IT_Technology,XGBoost,5,Sales,0.29632478952407837
+Auto,LogisticRegression,1,Net Profit,0.5535580507313363
+Auto,LogisticRegression,2,EPS in Rs,0.3268592951210169
+Auto,LogisticRegression,3,Other Income,0.300976124970181
+Auto,LogisticRegression,4,Interest,0.29514404078971596
+Auto,LogisticRegression,5,Depreciation,0.1964967223119135
+Auto,XGBoost,1,Operating Profit,0.39499974250793457
+Auto,XGBoost,2,Interest,0.2605368494987488
+Auto,XGBoost,3,EPS in Rs,0.24917790293693542
+Auto,XGBoost,4,Net Profit,0.23323658108711243
+Auto,XGBoost,5,Other Income,0.1713647097349167
+BFSI,LogisticRegression,1,Expenses,0.0
+BFSI,LogisticRegression,2,Other Income,0.0
+BFSI,LogisticRegression,3,Interest,0.0
+BFSI,LogisticRegression,4,Depreciation,0.0
+BFSI,LogisticRegression,5,Profit before tax,0.0
+BFSI,XGBoost,1,Interest,0.29254621267318726
+BFSI,XGBoost,2,Other Income,0.263440877199173
+BFSI,XGBoost,3,EPS in Rs,0.2487015724182129
+BFSI,XGBoost,4,Tax %,0.2308301329612732
+BFSI,XGBoost,5,Profit before tax,0.13248468935489655
+FMCG,LogisticRegression,1,Depreciation,0.03921729462746904
+FMCG,LogisticRegression,2,Expenses,0.038692496366535635
+FMCG,LogisticRegression,3,Sales,0.033789894924791675
+FMCG,LogisticRegression,4,Tax %,0.03283321741863488
+FMCG,LogisticRegression,5,Interest,0.031321351546382756
+FMCG,XGBoost,1,Depreciation,1.7042527198791504
+FMCG,XGBoost,2,Other Income,1.0905866622924805
+FMCG,XGBoost,3,Net Profit,0.8185222148895264
+FMCG,XGBoost,4,Tax %,0.717732310295105
+FMCG,XGBoost,5,Interest,0.7024555206298828
