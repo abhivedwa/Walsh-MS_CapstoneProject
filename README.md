@@ -1,70 +1,110 @@
-# Walsh-MS_CapstoneProject
+# Walsh MS Capstone Project
 
-**Dataset name. MS_Capstone_Final_Raw_Dump.xlsx**
+## Project Overview
+This repository contains the MS Capstone project work focused on financial data analysis and machine learning modeling. The project appears to analyze stock market data, particularly focusing on quarterly results, price movements, and sector-specific analysis.
 
-**Unit of analysis. Quarterly earnings event for a listed Indian company (one row per company-quarter).**
+## Project Structure
 
-**Coverage:** 45 NSE/BSE-listed companies across five sectors (IT/Technology, BFSI, FMCG, Pharma, Auto), spanning ~Q2 FY23 (July 2022) through ~Q1 FY26 (July 2025).
+### 📁 Root Directory
+- **`data/`** - Contains raw and processed data files
+- **`images/`** - Generated visualizations and charts organized by analysis cells
+- **`reports/`** - Interim and final project reports
+- **`src/`** - Source code and notebooks organized by functionality
 
-**Granularity.** Structured fundamentals reported for the quarter, plus closing prices on the result day (T) and the next three trading days (T+1, T+2, T+3).
+### 📊 Data Directory (`data/`)
+```
+data/
+├── raw/                                    # Original raw data files
+│   └── MS_Capstone_Final_Raw_Dump.xlsx
+└── raw_processed/                          # Cleaned and processed data
+    └── MS_Capstone_Final_Clean.xlsx
+```
 
-Intended use. Supervised classification of 3-day post-earnings price direction using only structured financials and event-day prices (no text/sentiment/technicals), as described in your capstone synopsis. 
+### 🖼️ Images Directory (`images/`)
+Organized by analysis cells (cell_5 through cell_11), containing:
+- **Correlation analysis** (Pearson, Spearman, mutual information)
+- **Sector-specific analysis** (Auto, FMCG, IT/Technology, Pharma, BFSI)
+- **Statistical visualizations** (box plots, scatter plots, heatmaps)
+- **Outlier analysis** and summary tables
+- **Seasonal and quarterly analysis** charts
 
-**What each column represents: Identifiers & event metadata**
+### 📋 Reports (`reports/`)
+- **`QM 640 Interim Report_old.docx`** - Previous interim report
+- **`QM 640 Interim Report-Abhi Vedwa .pdf`** - Current interim report
+- **`QM 640 Interim Report-Abhi Vedwa Draft V1.docx`** - Draft version
 
-**Company, Ticker** – issuer name and trading symbol used throughout the pipeline.
-    AV_Ticker.BSE (helper symbol for price backfill for Aplha Vantage API) 
+### 🔧 Source Code (`src/`)
 
-**Sector, Cap Category** – sector bucket and market-cap tier used for stratified analyses.
+#### Data Cleaners & EDA (`src/notebooks/Data_Cleaners_EDA/`)
+- **`Data_Quality_Check_Summary.ipynb`** - Data quality assessment notebook -- used in Report
+- **`EDA_Draft_code.ipynb`** - Draft exploratory data analysis WIP
+- **`EDA_Master.ipynb`** - Master EDA notebook -- used in Report
+- **`images/`** - Organized visualizations by analysis cells
 
-**Period** – reporting period label (e.g., Jun 2024 or Q1 FY26).
+#### Data Extractors (`src/notebooks/Data_Extractors/`)
+- **`getQuaterlyPriceData.ipynb`** - Quarterly price data extraction
+- **`getQuaterlyResults.ipynb`** - Quarterly results data extraction
+- **`Merge_Price_Results.ipynb`** - Data merging operations
+- **`Price_data_AV_API.ipynb`** - API-based price data extraction
 
-**Result Date** – official earnings announcement date (event anchor).
+#### Models (`src/notebooks/Models/`)
 
-**Structured quarterly fundamentals** (as available per company type)
+##### Final Models (`src/notebooks/Models/Final Models/`)
+- **`Optimised_Models.ipynb`** - Optimized machine learning models
+- **`RQ3.ipynb`** - Old one Research Question 3 analysis -  Refer Sector Specific MPA
+- **`Sector Specific MPA.ipynb`** - Sector-specific model performance analysis
+- **`images/`** - Model performance visualizations
+- **`rq3_analysis_results/`** - RQ3 specific analysis outputs
+- **`rq3_outputs/`** - RQ3 model outputs
 
-    Sales (a.k.a. revenue for non-financials), Operating Profit, OPM %, Other Income, Interest, Depreciation, Profit before tax (PBT), Tax %, Net Profit, EPS in Rs.
+##### Other Model Work (`src/notebooks/Models/Other Model Work/`)
+- **`Final_BaseLine_Models.ipynb`** - Baseline model implementations
+- **`LR.ipynb`** - Logistic regression specific work
 
-    Revenue, Financing Profit, Financing Margin %, (BFSI-specific – appears where applicable).
+## Analysis Structure
 
-Note: Some issuers (esp. banks/NBFCs) report Revenue rather than Sales and provide financing/NPA fields instead of manufacturing-style margins. 
+The project is organized into analysis "cells" (cell_5 through cell_11), each focusing on specific aspects:
 
-**Event-window prices (closing):**
+- **Cell 5**: Correlation analysis, collinearity assessment, feature selection
+- **Cell 6**: Seasonal analysis, quarterly patterns, fiscal quarter returns
+- **Cell 7**: Sector-specific correlations, financial margin analysis
+- **Cell 8**: Outlier detection, distribution analysis, influential observations
+- **Cell 9**: Sector-specific fundamental analysis, movement patterns
+- **Cell 10**: Capitalization analysis, sector ranking, correlation vs. return analysis
+- **Cell 11**: Skewness analysis, distribution characteristics
 
-    _T_date, Closing Price (T) – result-day close (or previous trading day if no trade on result date).
+## Key Features
 
-    _T1_date, Closing Price (T+1) – next trading day close.
+- **Comprehensive EDA**: Extensive exploratory data analysis across multiple dimensions
+- **Sector Analysis**: Deep dive into specific sectors (Auto, FMCG, IT, Pharma, BFSI)
+- **Machine Learning Models**: Multiple model implementations with optimization
+- **Statistical Analysis**: Correlation analysis, outlier detection, seasonal patterns
+- **Data Quality**: Systematic data quality assessment and cleaning procedures
 
-    _T2_date, Closing Price (T+2) – second trading day close.
+## Technologies Used
 
-    _T3_date, Closing Price (T+3) – third trading day close.
+- **Python**: Primary programming language
+- **Jupyter Notebooks**: Interactive analysis and documentation
+- **Pandas/NumPy**: Data manipulation and analysis
+- **Matplotlib/Seaborn**: Data visualization
+- **Scikit-learn**: Machine learning models
+- **XGBoost**: Advanced gradient boosting models
+
+## Getting Started
+
+1. Navigate to the appropriate notebook in `src/notebooks/`
+2. Ensure all dependencies are installed
+3. Start with the EDA notebooks for understanding the data
+4. Review the model notebooks for implementation details
+
+## Project Status
+
+This appears to be an active MS Capstone project with ongoing development and analysis. The structure suggests a comprehensive approach to financial data analysis with both exploratory and predictive modeling components.
+
+---
+
+*Last Updated: 24-08-2025*
+*Project Lead: Abhi Vedwa*
+*Course: WAlsh MS Capstone*
     
-
-**3-Day Avg Price Post Result:** Avg of Closing Price of T+1, T+2, T+3.
-
-**3-Day Return (%):** =ROUND(((3-Day Avg Price Post Result-T)/T)*100,2)
-
-**Movement Label (1,0):** =IF(3-Day Return (%) >= 1, 1, 0)
-
-**Source links:**
-
-    ---> IndianAPI (documentation/landing)
-
-        Quarterly results (to get Result Date):
-
-            https://stock.indianapi.in/historical_stats?stock_name=<TICKER>&stats=quarter_results
-
-        Daily prices (daily-like only):
-
-            https://stock.indianapi.in/historical_data?stock_name=<TICKER>&period=1yr&filter=price
-
-    ---> NSE India (company classification / filings)
-
-    ---> BSE/NSE bhavcopy documentation
-
-    ---> Alpha Vantage (TIME_SERIES_DAILY) API
-
-            https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=<BSE_TICKER>.BSE&outputsize=full&apikey=<KEY>
-    
-   
 
